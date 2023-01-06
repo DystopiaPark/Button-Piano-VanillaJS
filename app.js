@@ -1,11 +1,11 @@
-const audio1 = new Audio("./notes/key01.mp3");
-const audio2 = new Audio("./notes/key03.mp3");
-const audio3 = new Audio("./notes/key05.mp3");
-const audio4 = new Audio("./notes/key06.mp3");
-const audio5 = new Audio("./notes/key08.mp3");
-const audio6 = new Audio("./notes/key10.mp3");
-const audio7 = new Audio("./notes/key12.mp3");
-const audio8 = new Audio("./notes/key13.mp3");
+const audio1 = new Audio("./notes/key08.mp3");
+const audio2 = new Audio("./notes/key10.mp3");
+const audio3 = new Audio("./notes/key12.mp3");
+const audio4 = new Audio("./notes/key13.mp3");
+const audio5 = new Audio("./notes/key15.mp3");
+const audio6 = new Audio("./notes/key17.mp3");
+const audio7 = new Audio("./notes/key19.mp3");
+const audio8 = new Audio("./notes/key20.mp3");
 
 const buttons = document.querySelectorAll(".btn");
 
@@ -32,7 +32,7 @@ buttons.forEach((button) => {
   });
 });
 
-document.addEventListener("keypress", (event) => {
+document.addEventListener("keydown", (event) => {
   const { key } = event;
   if (key === "a") {
     audio1.play();
